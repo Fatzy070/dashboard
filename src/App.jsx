@@ -1,16 +1,24 @@
 import React from 'react';
 import { BrowserRouter , Routes , Route } from 'react-router-dom';
-import Dashboard from './components/Dashboard';
 import Layout from './layout/Layout';
-import Profile from './components/Home/Profile';
-
+import ProfilePage from './Pages/profile/ProfilePage';
+import SignupPage from './Pages/auth/SignupPage';
+import LoginPage from './Pages/auth/LoginPage';
+import NotifyPage from './Pages/Notification/NotifyPage';
+import DashboardPage from './Pages/Home/DashboardPage';
+import TablePage from './Pages/table/TablePage'
 const App = () => {
   return (
     <BrowserRouter >
         <Routes>
+           <Route index element={<SignupPage />} />
+           <Route path='login' element={<LoginPage />} />
             <Route path='/' element={ <Layout /> }>
-            <Route index element={<Dashboard />} />
-            <Route path='profile' element={<Profile />} />
+            <Route path='/dashboard' element={<DashboardPage />} />
+            <Route path='profile' element={<ProfilePage />} />
+            <Route path='notification' element={<NotifyPage />} />
+            <Route path='tables' element={<TablePage />} />
+           
             </Route>
         </Routes>
     </BrowserRouter>

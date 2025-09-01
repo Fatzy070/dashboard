@@ -11,15 +11,15 @@ import { MdOutlineSignalCellularAlt } from "react-icons/md";
 const Info =  {
     material:'material tailwind dashboard',
     dashboard:[
-        {id:1 , name:'dashboard' , icon:FaHome , link: '/'},
+        {id:1 , name:'dashboard' , icon:FaHome , link: '/dashboard'},
         {id:2 , name:'profile' , icon:FaCircleUser , link: '/profile'},
         {id:3 , name:'tables' , icon:LiaTableSolid , link:'/tables' },
-        {id:4 , name:'notifications' , icon:IoIosNotifications , link:'/notification'}
+        {id:4 , name:'notification' , icon:IoIosNotifications , link:'/notification'}
     ],
     auth:'auth pages',
     sign:[
-        {id:1 , name:'sign in' , icon:TbDeviceMobileShare , link:''},
-        {id:2 , name:'sign up' , icon: FaUserPlus , link:''}
+        {id:1 , name:'sign in' , icon:TbDeviceMobileShare , link:'/login'},
+        {id:2 , name:'sign up' , icon: FaUserPlus , link:'/signup'}
     ],
     home:[
         {id:1 , name:'today\'s money ' , money:'$53k' , percent:'+55%' , text:'than last week' , icon: IoCameraReverse},

@@ -7,8 +7,8 @@ const Dashboard = () => {
     const { home } = Info
     return (
         <>
-            <Head title="Dashboard" name="Faruk" />
-            <Nav title="Dashboard" name="Faruk" />
+            <Head title="Dashboard" name="Home" />
+            <Nav title="Dashboard" name="Home" />
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 mt-14'>
                 {home.map((item) => {
                     const Icon =item.icon
@@ -34,7 +34,7 @@ const Dashboard = () => {
                     )
                 })}
             </div>
-            <div className="bg-white p-4 rounded-2xl shadow">
+            <div className="bg-white p-4 mt-6 rounded-2xl shadow">
         <VisitorsChart />
       </div>
         </>

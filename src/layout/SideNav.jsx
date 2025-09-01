@@ -36,10 +36,12 @@ const SideNav = () => {
                 {sign.map((item) => {
                         const Icon = item.icon
                     return (
-                        <div key={item} className='flex rounded-md capitalize font-semibold gap-3 py-4 px-3 page items-center'> 
+                        <NavLink
+                        to={item.link}
+                        key={item} className='flex rounded-md capitalize font-semibold gap-3 py-4 px-3 page items-center'> 
                         <Icon size={19}/>
                         <p>{item.name}</p>
-                        </div>
+                        </NavLink>
                     )
                 })}
                 </div>

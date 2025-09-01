@@ -12,11 +12,15 @@ const Menu = () => {
   return (
     <>
       {/* Menu Button */}
-      <div onClick={toggleOpen} className="cursor-pointer z-50">
+      <div onClick={toggleOpen} className="cursor-pointer ">
         <IoMenu size={24} />
       </div>  
 
       {/* Sidebar */}
+       <div 
+      className="fixed inset-0 z-60 " 
+      onClick={toggleOpen}
+    ></div>
       <div className='absolute top-0 left-0 w-full z-40'>
         {isOpen && 
         <SideNav />

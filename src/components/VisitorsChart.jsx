@@ -25,6 +25,7 @@ const VisitorsChart = () => {
       },
       options: {
         responsive: true,
+        maintainAspectRatio: false,
         plugins: {
           legend: { display: true, position: "top" },
         },
@@ -32,7 +33,10 @@ const VisitorsChart = () => {
     });
   }, []);
 
-  return <canvas ref={chartRef} className="w-full h-64" />;
+  return <div className="w-full h-[250px]  md:h-[400px]">
+  <canvas ref={chartRef} />
+</div>
+
 };
 
 export default VisitorsChart;
