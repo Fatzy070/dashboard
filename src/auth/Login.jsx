@@ -76,7 +76,7 @@ const Login = () => {
         <div className="text-center text-sm text-gray-200">
           Don’t have an account?{" "}
           <NavLink
-            to="/signup"
+            to="/"
             className="font-semibold text-white hover:underline"
           >
             Sign Up

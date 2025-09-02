@@ -19,7 +19,7 @@ const Info =  {
     auth:'auth pages',
     sign:[
         {id:1 , name:'sign in' , icon:TbDeviceMobileShare , link:'/login'},
-        {id:2 , name:'sign up' , icon: FaUserPlus , link:'/signup'}
+        {id:2 , name:'sign up' , icon: FaUserPlus , link:'/'}
     ],
     home:[
         {id:1 , name:'today\'s money ' , money:'$53k' , percent:'+55%' , text:'than last week' , icon: IoCameraReverse},
