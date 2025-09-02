@@ -5,7 +5,7 @@ const SideNav = () => {
         const { material , dashboard , sign , auth } = Info
     return (
         <>
-     <div className='border h-screen w-[65%] md:w-[50%] lg:w-[285px] lg:h-[97dvh] lg:rounded-[15px] bg-[rgba(23,32,46,255)] text-white overflow-y-auto'>
+     <div className='border h-screen w-[100%] md:w-[50%] lg:w-[285px] lg:h-[97dvh] lg:rounded-[15px] bg-[rgba(23,32,46,255)] text-white overflow-y-auto'>
 
                 <h1 className='py-7 text-[14px] md:text-[1rem] text-center font-semibold capitalize'>{material}</h1>
                 <hr className='text-gray-400'/>

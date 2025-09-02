@@ -18,10 +18,12 @@ const Menu = () => {
 
       {/* Sidebar */}
        <div 
-      className="fixed inset-0 z-60 " 
+      className="fixed inset-0 z-40 " 
       onClick={toggleOpen}
     ></div>
-      <div className='absolute top-0 left-0 w-full z-40'>
+      <div className='absolute  top-0 left-0 w-[70%] border z-40'
+      onClick={(e) => e.stopPropagation()}
+      >
         {isOpen && 
         <SideNav />
         }
