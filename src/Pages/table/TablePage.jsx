@@ -13,7 +13,7 @@ const Table = () => {
     <>
     <Head title="tables" name="Home" />
         <Nav title="tables" name="Home" />
-    <div style={{ padding: "20px" }}>
+    <div >
         
       <h2>Users Table</h2>
       {users.length > 0 ? (
